@@ -3,9 +3,11 @@
 const express = require("express"),
     ejs = require("ejs"),
     app = express(),
+    bodyParser = require('body-parser'),
     config = require("./config.json"),
     moment = require("moment"),
     chalk = require('chalk'),
+    nodemailer = require('nodemailer'),
     log = console.log;
 
 log();
@@ -19,12 +21,14 @@ log("__base:", __base);
 app.set("view engine", "ejs");
 app.set("views", __dirname + "/views");
 app.use(express.static("static"));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.set("env", "development");
 
 app.use(logRequests);
 
+// Router 
 
-// Main home page
+// Home page
 app.get("/", function (req, res) {
     res.render("pages/index");
 });
@@ -34,6 +38,36 @@ app.get("*", function (req, res, next) {
     res.status(404);
     res.errCode = 404;
     next("URL " + req.originalUrl + " Not Found");
+});
+
+// Contact middleware
+app.post('/contact', (req, res) => {
+    const transporter = nodemailer.createTransport({
+        host: 'smtpout.secureserver.net',
+        port: 465,
+        secure: true,
+        auth: {
+            user: 'yourgodaddyemail@example.com',
+            pass: 'yourgodaddyemailpassword'
+        }
+    });
+
+    const mailOptions = {
+        from: 'yourgodaddyemail@example.com',
+        to: 'recipient@example.com',
+        subject: 'New message from your website!',
+        text: 'You have received a new message from your website contact form.\n\nName: ' + req.body.name + '\nEmail: ' + req.body.email + '\nMessage: ' + req.body.message
+    };
+
+    transporter.sendMail(mailOptions, (error, info) => {
+        if (error) {
+            console.log(error);
+            res.send('An error occurred while sending the email.');
+        } else {
+            console.log('Email sent: ' + info.response);
+            res.send('Thank you for your message!');
+        }
+    });
 });
 
 // Server Functions
