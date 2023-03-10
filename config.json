@@ -1,0 +1,7 @@
+{
+    "server": {
+      "domain": "localhost",
+      "production": false,
+      "port": 8080
+    }
+  }
