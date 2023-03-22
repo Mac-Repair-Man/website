@@ -3,5 +3,13 @@
       "domain": "localhost",
       "production": false,
       "port": 8080
+    },
+
+    "contact": {
+      "host": "smtpout.secureserver.net",
+      "port": 465,
+      "secure": true,
+      "user": "yourgodaddyemail@example.com",
+      "pass": "yourgodaddyemailpassword"
     }
   }

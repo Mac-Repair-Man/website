@@ -43,12 +43,12 @@ app.get("*", function (req, res, next) {
 // Contact middleware
 app.post('/contact', (req, res) => {
     const transporter = nodemailer.createTransport({
-        host: 'smtpout.secureserver.net',
-        port: 465,
-        secure: true,
+        host: config.contact.host,
+        port: config.contact.port || 465,
+        secure: config.contact.secure || true,
         auth: {
-            user: 'yourgodaddyemail@example.com',
-            pass: 'yourgodaddyemailpassword'
+            user: config.contact.user,
+            pass: config.contact.pass
         }
     });
 
