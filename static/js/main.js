@@ -13,7 +13,7 @@
     // START PRELOADED
     $(window).on('load', function () {
         $('.preloader').fadeOut();
-        $('.preloader').delay(350).fadeOut('slow');
+        $('.preloader').delay(550).fadeOut('slow');
     });
 
     // Navbar Menu Reduce 
