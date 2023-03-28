@@ -37,7 +37,7 @@ app.get("/", function (req, res) {
 app.get("*", function (req, res, next) {
     res.status(404);
     res.errCode = 404;
-    next("URL " + req.originalUrl + " Not Found");
+    res.render("pages/404");
 });
 
 // Contact middleware
