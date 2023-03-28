@@ -13,7 +13,7 @@
 }
 
 .header-navber-area .nav-top-bar {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.637);
     padding-top: 8px;
     padding-bottom: 8px;
 }
@@ -106,7 +106,7 @@
 }
 
 .white-logo {
-    width: 150px;
+    width: 200px;
     height: auto;
 }
 
@@ -131,6 +131,7 @@
     position: relative;
     padding-right: 10px;
     padding-left: 0;
+    font-size: large;
 }
 
 .navbar-b.navbar-trans .nav-item,
@@ -150,8 +151,20 @@
     color: #fff;
     text-transform: capitalize;
     font-weight: 600;
-    font-size: 15px;
+    font-size: auto;
     letter-spacing: 0.5px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar-b.navbar-trans .nav-link:hover,
+.navbar-b.navbar-reduce .nav-link:hover {
+    color: black !important;
+    background-color: white;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding: 10px 10px;
     font-family: 'Open Sans', sans-serif;
 }
 

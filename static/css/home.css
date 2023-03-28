@@ -7,7 +7,6 @@
     position: relative;
     color: #fff;
     text-align: center;
-    background: url(/img/banner-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -15,6 +14,17 @@
     padding-top: 150px;
     padding-bottom: 40px;
 }
+
+.home-area video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+    z-index: -1;
+  }
 
 .home-area::after {
     position: absolute;
@@ -26,7 +36,7 @@
     width: 100%;
     opacity: .8;
     z-index: -1;
-    background: -webkit-gradient(linear, right top, left top, color-stop(0, rgba(2, 45, 98, 0)), to(#620202)), -webkit-gradient(linear, right top, left top, color-stop(0, rgba(2, 45, 98, 0)), to(#022d62));
+    background: -webkit-gradient(linear, right top, left top, color-stop(0, rgba(1, 31, 68, 0)), to(#620202)), -webkit-gradient(linear, right top, left top, color-stop(0, rgba(2, 45, 98, 0)), to(#022d62));
     background: linear-gradient(to left, rgba(2, 45, 98, 0) 0, #6202023d 100%), linear-gradient(to left, rgba(2, 45, 98, 0) 0, #022d62 100%);
 }
 
