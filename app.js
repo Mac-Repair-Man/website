@@ -19,6 +19,8 @@ log("Time:", Date.now());
 global.__base = __dirname + "/";
 log("__base:", __base);
 
+
+app.use(compression());
 app.set("view engine", "ejs");
 app.set("views", __dirname + "/views");
 app.use(express.static("static"));
@@ -26,8 +28,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.set("env", "development");
 
 app.use(logRequests);
-app.use(compression());
-
 // Router 
 
 // Home page
