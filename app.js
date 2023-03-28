@@ -8,6 +8,7 @@ const express = require("express"),
     moment = require("moment"),
     chalk = require('chalk'),
     nodemailer = require('nodemailer'),
+    compression = require("compression"),
     log = console.log;
 
 log();
@@ -25,6 +26,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.set("env", "development");
 
 app.use(logRequests);
+app.use(compression());
 
 // Router 
 
