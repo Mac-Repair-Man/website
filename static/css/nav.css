@@ -107,9 +107,12 @@
 }
 
 .white-logo {
-  width: 200px;
+  width: 250px;
   height: auto;
 }
+
+
+
 
 .navbar-b {
   transition: all 0.5s ease-in-out;
