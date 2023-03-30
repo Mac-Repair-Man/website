@@ -13,8 +13,8 @@
 }
 
 .header-navber-area .nav-top-bar {
-    background-color: #f8002f;
-    background-image: linear-gradient(326deg, #f8002f 0%, #000c14 74%);
+  background-color: #f8002f;
+  background-image: linear-gradient(326deg, #f8002f 0%, #000c14 74%);
   padding-top: 8px;
   padding-bottom: 8px;
 }
@@ -23,12 +23,12 @@
   margin: 0 13px 0 0;
   display: inline-block;
   color: #ffffff;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .header-navber-area .nav-top-bar .call-to-action p i {
   margin-right: 3px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .header-navber-area .nav-top-bar .call-to-action p a {
@@ -71,14 +71,14 @@
 }
 
 .header-navber-area .nav-top-bar .opening-hours p {
-  font-size: 14px;
+  font-size: 16px;
   color: #ffffff;
   margin-bottom: 0;
 }
 
 .header-navber-area .nav-top-bar .opening-hours p i {
   margin-right: 3px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .header-navber-area .nav-top-bar.template-color-bg {
@@ -185,15 +185,15 @@
   color: #fff;
 }
 
-.main-index-nav.navbar-b.navbar-trans .show > .nav-link,
-.main-index-nav.navbar-b.navbar-trans .active > .nav-link,
+.main-index-nav.navbar-b.navbar-trans .show>.nav-link,
+.main-index-nav.navbar-b.navbar-trans .active>.nav-link,
 .main-index-nav.navbar-b.navbar-trans .nav-link.show,
 .main-index-nav.navbar-b.navbar-trans .nav-link.active {
   color: #333;
 }
 
-.navbar-b.navbar-trans .show > .nav-link,
-.navbar-b.navbar-trans .active > .nav-link,
+.navbar-b.navbar-trans .show>.nav-link,
+.navbar-b.navbar-trans .active>.nav-link,
 .navbar-b.navbar-trans .nav-link.show,
 .navbar-b.navbar-trans .nav-link.active {
   color: #fff;
@@ -219,15 +219,15 @@
   color: #505050;
 }
 
-.main-index-nav.navbar-b.navbar-reduce .show > .nav-link,
-.main-index-nav.navbar-b.navbar-reduce .active > .nav-link,
+.main-index-nav.navbar-b.navbar-reduce .show>.nav-link,
+.main-index-nav.navbar-b.navbar-reduce .active>.nav-link,
 .main-index-nav.navbar-b.navbar-reduce .nav-link.show,
 .main-index-nav.navbar-b.navbar-reduce .nav-link.active {
   color: #333;
 }
 
-.navbar-b.navbar-reduce .show > .nav-link,
-.navbar-b.navbar-reduce .active > .nav-link,
+.navbar-b.navbar-reduce .show>.nav-link,
+.navbar-b.navbar-reduce .active>.nav-link,
 .navbar-b.navbar-reduce .nav-link.show,
 .navbar-b.navbar-reduce .nav-link.active {
   color: #555;
