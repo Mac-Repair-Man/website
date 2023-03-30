@@ -37,13 +37,11 @@
   width: 100%;
   opacity: 0.8;
   z-index: -1;
-  background: -webkit-gradient(
-      linear,
+  background: -webkit-gradient(linear,
       right top,
       left top,
       color-stop(0, rgba(1, 31, 68, 0)),
-      to(#620202)
-    ),
+      to(#620202)),
     -webkit-gradient(linear, right top, left top, color-stop(0, rgba(2, 45, 98, 0)), to(#022d62));
   background: linear-gradient(to left, rgba(2, 45, 98, 0) 0, #6202023d 100%),
     linear-gradient(to left, rgba(2, 45, 98, 0) 0, #ff9e97 100%);
@@ -470,6 +468,22 @@
 
 .about-image-wrapper {
   text-align: center;
+}
+
+.map-responsive {
+
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 
 .about-seo-feature {
