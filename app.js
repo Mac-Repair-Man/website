@@ -22,6 +22,7 @@ log("__base:", __base);
 
 app.use(compression());
 app.set("view engine", "ejs");
+app.use(require("prerender-node"));
 app.set("views", __dirname + "/views");
 app.use(express.static("static"));
 app.use(bodyParser.urlencoded({ extended: true }));
