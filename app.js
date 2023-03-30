@@ -9,6 +9,7 @@ const express = require("express"),
     chalk = require('chalk'),
     nodemailer = require('nodemailer'),
     compression = require("compression"),
+    cookieParser = require('cookie-parser'),
     log = console.log;
 
 log();
@@ -27,6 +28,7 @@ app.set("views", __dirname + "/views");
 app.use(express.static("static"));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.set("env", "development");
+app.use(cookieParser());
 
 app.use(logRequests);
 // Router 
@@ -91,6 +93,17 @@ function logRequests(req, res, next) {
     log(chalk.blue("Request:", req.originalUrl));
     next();
 }
+
+app.on('listening', function () {
+    console.log('Server started!');
+
+    app.use(function (req, res, next) {
+        for (var cookie in req.cookies) {
+            res.clearCookie(cookie);
+        }
+        next();
+    });
+});
 
 const port = config.server.port || 5000;
 const server = app
