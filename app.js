@@ -10,6 +10,7 @@ const express = require("express"),
     nodemailer = require('nodemailer'),
     compression = require("compression"),
     cookieParser = require('cookie-parser'),
+    morgan = require('morgan'),
     log = console.log;
 
 log();
@@ -29,6 +30,7 @@ app.use(express.static("static"));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.set("env", "development");
 app.use(cookieParser());
+app.use(morgan('combined'));
 
 app.use(logRequests);
 // Router 
