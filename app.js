@@ -60,8 +60,8 @@ app.post('/contact', (req, res) => {
     });
 
     const mailOptions = {
-        from: 'yourgodaddyemail@example.com',
-        to: 'recipient@example.com',
+        from: 'info@macrepairman.ca',
+        to: 'applerepairmacman@gmail.com',
         subject: 'New message from your website!',
         text: 'You have received a new message from your website contact form.\n\nName: ' + req.body.name + '\nEmail: ' + req.body.email + '\nMessage: ' + req.body.message
     };
