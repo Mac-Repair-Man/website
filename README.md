@@ -16,18 +16,23 @@ To set up and run the website locally:
 git clone https://github.com/Mac-Repair-Man/website.git
 ```
 
-2. Install the required dependencies:
+2. Configure config.json:
 ```
 cd website
+nano config.json
+```
+
+3. Install the required dependencies:
+```
 npm install
 ```
 
-3. Start the server:
+4. Start the server:
 ```
 npm start
 ```
 
-4. Open a web browser and navigate to http://localhost:8080 to view the website.
+5. Open a web browser and navigate to http://localhost:8080 to view the website.
 
 ## Contributing
 To contribute to this project:
