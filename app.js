@@ -40,8 +40,19 @@ app.get("/", function (req, res) {
     res.render("pages/index");
 });
 
+// robots.txt redirect
+app.get("/robots.txt", function(req, res) {
+    res.sendFile(__dirname +  "/robots.txt");
+});
+
+// sitemap.xml redirect
+app.get("/sitemap.xml", function(req, res) {
+    res.sendFile(__dirname + "/sitemap.xml");
+});
+
+// 404 Page redirection
 app.use((req, res) => {
-    res.redirect('/');
+    res.redirect("/");
 });
 
 // Contact middleware
