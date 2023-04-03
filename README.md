@@ -32,7 +32,7 @@ npm install
 npm start
 ```
 
-5. Open a web browser and navigate to http://localhost:8080 to view the website.
+5. Open a web browser and navigate to http://localhost:5000 to view the website.
 
 ## Contributing
 To contribute to this project:
