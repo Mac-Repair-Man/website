@@ -14,6 +14,10 @@ router.get("/", function (req, res) {
     res.render("pages/index");
 });
 
+router.get("/terms", function (req, res) {
+    res.render("pages/terms");
+});
+
 router.get("/robots.txt", function(req, res) {
     res.sendFile(__dirname + "/robots.txt");
 });
