@@ -35,7 +35,10 @@ app.use(require('prerender-node'));
 app.use(express.static("static"));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
-app.use(morgan('dev'));
+app.use(morgan('tiny'));
+
+// Add middleware
+app.use(logRequests);
 
 // View engine setup
 app.set("views", __dirname + "/views");
@@ -108,6 +111,3 @@ process.on("SIGINT", () => {
         process.exit(0);
     });
 });
-
-// Add middleware
-app.use(logRequests);
