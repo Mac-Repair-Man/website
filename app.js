@@ -1,26 +1,31 @@
 "use strict";
 
-const express = require("express");
-const ejs = require("ejs");
-const bodyParser = require('body-parser');
-const config = require("./config.json");
-const router = require('./router');
-const contact = require('./contact');
-const moment = require("moment");
-const chalk = require('chalk');
-const compression = require("compression");
-const cookieParser = require('cookie-parser');
-const morgan = require('morgan');
+// Import required packages and modules
+const express = require("express"); // Web application framework
+const ejs = require("ejs"); // Template engine
+const bodyParser = require('body-parser'); // Middleware to parse request bodies
+const config = require("./config.json"); // Configuration file
+const router = require('./router'); // Route handler
+const contact = require('./contact'); // Contact form handler
+const moment = require("moment"); // Date and time library
+const chalk = require('chalk'); // Colored console logging
+const compression = require("compression"); // Middleware to compress responses
+const cookieParser = require('cookie-parser'); // Middleware to parse cookies
+const morgan = require('morgan'); // HTTP request logger
 
+// Create the Express application
 const app = express();
 
+// Set up logging function
 const log = console.log;
 
+// Log process initialization
 log();
 log();
 log(chalk.green(" --- PROCESS INITIALIZATION ---"));
 log("Time:", getTimeFormatted());
 
+// Set up global variable for root directory
 global.__base = __dirname + "/";
 log("__base:", __base);
 
@@ -57,6 +62,22 @@ function logRequests(req, res, next) {
     console.log(chalk.blue("Request:", req.originalUrl));
     next();
 }
+
+// Git pull request
+app.post('/deploy', (req, res) => {
+    exec('git pull origin main', (err, stdout, stderr) => {
+        if (err) {
+            console.error(err);
+            return res.status(500).send('Error while updating repository');
+        }
+
+        console.log(`stdout: ${stdout}`);
+        console.log(`stderr: ${stderr}`);
+
+        res.status(200).send('Repository updated successfully');
+        process.exit(0);
+    });
+});
 
 // Start server
 const port = config.server.port || 5000;
