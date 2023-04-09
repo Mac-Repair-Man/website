@@ -31,7 +31,7 @@ log("__base:", __base);
 
 // Middleware
 app.use(compression());
-app.use(require('prerender-node'));
+app.use(require('prerender-node').set('prerenderToken', config.prerender.token));
 app.use(express.static("static"));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());

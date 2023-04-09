@@ -5,6 +5,10 @@
       "port": 8080
     },
 
+    "prerender": {
+      "token": ""
+    },
+
     "contact": {
       "host": "smtpout.secureserver.net",
       "port": 465,
