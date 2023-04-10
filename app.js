@@ -12,7 +12,6 @@ const chalk = require('chalk'); // Colored console logging
 const compression = require("compression"); // Middleware to compress responses
 const cookieParser = require('cookie-parser'); // Middleware to parse cookies
 const morgan = require('morgan'); // HTTP request logger
-const helmet = require('helmet'); // HTTP headers security middleware
 
 // Create the Express application
 const app = express();
@@ -37,7 +36,6 @@ app.use(express.static("static"));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(morgan('tiny'));
-app.use(helmet());
 app.use(logRequests);
 
 // View engine setup
