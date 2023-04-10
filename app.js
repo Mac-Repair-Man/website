@@ -99,7 +99,6 @@ app.use((req, res, next) => {
     res.on('finish', () => {
         // Clear all cookies
         res.clearCookie();
-        res.clearCookie();
     });
     next();
 });
