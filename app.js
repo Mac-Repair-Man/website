@@ -94,11 +94,13 @@ server.on("error", (err) => {
     log(chalk.red("Connection error:", err));
 });
 
-// Clear cookies on shutdown
-app.use(function (req, res, next) {
-    for (var cookie in req.cookies) {
-        res.clearCookie(cookie);
-    }
+// Clear all cookies on app restart
+app.use((req, res, next) => {
+    res.on('finish', () => {
+        // Clear all cookies
+        res.clearCookie();
+        res.clearCookie();
+    });
     next();
 });
 
