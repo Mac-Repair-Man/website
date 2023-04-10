@@ -106,9 +106,9 @@ button:focus {
   position: relative;
   z-index: 2;
   display: inline-block;
-  padding: 9px 30px;
+  padding: 10px 50px;
   text-align: center;
-  font-size: 15px;
+  font-size: 20px;
   text-transform: capitalize;
   letter-spacing: 0.5px;
   font-weight: 600;
