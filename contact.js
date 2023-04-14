@@ -17,7 +17,7 @@ contactMiddleware.post('/contact', (req, res) => {
 
     const mailOptions = {
         from: 'info@macrepairman.ca',
-        to: 'applerepairmacman@gmail.com',
+        to: 'info@macrepairman.ca',
         subject: 'New message from your website!',
         text: 'You have received a new message from your website contact form.\n\nName: ' + req.body.name + '\nEmail: ' + req.body.email + '\nMessage: ' + req.body.message
     };
