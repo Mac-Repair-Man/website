@@ -211,10 +211,7 @@ https://github.com/imakewebthings/waypoints/blog/master/licenses.txt
 
 })(jQuery);
 
-
-// Ajax mail js
 $(function () {
-
     // Get the form.
     var form = $('#contact-form');
 
@@ -222,42 +219,45 @@ $(function () {
     var formMessages = $('.form-message');
 
     // Set up an event listener for the contact form.
-    $(form).submit(function (e) {
+    form.submit(function (e) {
         // Stop the browser from submitting the form.
         e.preventDefault();
 
         // Serialize the form data.
-        var formData = $(form).serialize();
+        var formData = form.serialize();
 
         // Submit the form using AJAX.
         $.ajax({
             type: 'POST',
-            url: $(form).attr('action'),
-            data: formData
+            url: form.attr('action'),
+            data: formData,
+            dataType: 'json' // Specify the response data type as JSON
         })
             .done(function (response) {
-                // Make sure that the formMessages div has the 'success' class.
-                $(formMessages).removeClass('error');
-                $(formMessages).addClass('success');
-
-                // Set the message text.
-                $(formMessages).text(response);
-
-                // Clear the form.
-                $('#contact-form input,#contact-form textarea').val('');
+                // Check the response for success or error.
+                if (response.success) {
+                    // Clear the form.
+                    form.find('input, textarea').val('');
+                    // Display success message.
+                    formMessages.removeClass('error');
+                    formMessages.addClass('success');
+                    formMessages.text(response.message);
+                } else {
+                    // Display error message.
+                    formMessages.removeClass('success');
+                    formMessages.addClass('error');
+                    formMessages.text(response.message);
+                }
             })
             .fail(function (data) {
-                // Make sure that the formMessages div has the 'error' class.
-                $(formMessages).removeClass('success');
-                $(formMessages).addClass('error');
-
-                // Set the message text.
+                // Display error message if AJAX request fails.
+                formMessages.removeClass('success');
+                formMessages.addClass('error');
                 if (data.responseText !== '') {
-                    $(formMessages).text(data.responseText);
+                    formMessages.text(data.responseText);
                 } else {
-                    $(formMessages).text('Oops! An error occured and your message could not be sent.');
+                    formMessages.text('Oops! An error occurred and your message could not be sent.');
                 }
             });
     });
-
 });
