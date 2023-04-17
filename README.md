@@ -11,28 +11,18 @@ The main official website for the Mac Repair Man that allows customers to view o
 ## Getting Started
 To set up and run the website locally:
 
-1. Clone this repository:
 ```
+# Clone this repository
 git clone https://github.com/Mac-Repair-Man/website.git
-```
-
-2. Configure config.json:
-```
+# Configure config.json
 cd website
 nano config.json
-```
-
-3. Install the required dependencies:
-```
+# Install the required dependencies
 npm install
-```
-
-4. Start the server:
-```
+# Start the server
 npm start
 ```
-
-5. Open a web browser and navigate to http://localhost:5000 to view the website.
+- Open a web browser and navigate to http://localhost:5000 to view the website.
 
 ## Contributing
 To contribute to this project:
