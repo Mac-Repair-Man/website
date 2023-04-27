@@ -233,31 +233,31 @@ $(function () {
             data: formData,
             dataType: 'json' // Specify the response data type as JSON
         })
-            .done(function (response) {
-                // Check the response for success or error.
-                if (response.success) {
-                    // Clear the form.
-                    form.find('input, textarea').val('');
-                    // Display success message.
-                    formMessages.removeClass('error');
-                    formMessages.addClass('success');
-                    formMessages.text(response.message);
-                } else {
-                    // Display error message.
-                    formMessages.removeClass('success');
-                    formMessages.addClass('error');
-                    formMessages.text(response.message);
-                }
-            })
-            .fail(function (data) {
-                // Display error message if AJAX request fails.
+        .done(function (response) {
+            // Check the response for success or error.
+            if (response.success) {
+                // Clear the form.
+                form[0].reset();
+                // Display success message.
+                formMessages.removeClass('error');
+                formMessages.addClass('success');
+                formMessages.text(response.message);
+            } else {
+                // Display error message.
                 formMessages.removeClass('success');
                 formMessages.addClass('error');
-                if (data.responseText !== '') {
-                    formMessages.text(data.responseText);
-                } else {
-                    formMessages.text('Oops! An error occurred and your message could not be sent.');
-                }
-            });
+                formMessages.text(response.message);
+            }
+        })
+        .fail(function (xhr, textStatus, error) {
+            // Display error message if AJAX request fails.
+            formMessages.removeClass('success');
+            formMessages.addClass('error');
+            if (xhr.responseText !== '') {
+                formMessages.text(xhr.responseText);
+            } else {
+                formMessages.text('Oops! An error occurred and your message could not be sent.');
+            }
+        });
     });
 });

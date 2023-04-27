@@ -19,6 +19,11 @@ const app = express();
 // Set up logging function
 const log = console.log;
 
+// Server Functions
+function getTimeFormatted() {
+    return moment().format("MMMM Do YYYY, h:mm:ss a") + " (" + Date.now() + ")";
+}
+
 // Log process initialization
 log();
 log();
@@ -48,11 +53,6 @@ app.set("env", "development");
 app.use('/', router);
 app.use('/', contact);
 
-// Server Functions
-function getTimeFormatted() {
-    return moment().format("MMMM Do YYYY, h:mm:ss a") + " (" + Date.now() + ")";
-}
-
 function logRequests(req, res, next) {
     const ip = req.headers["x-forwarded-for"] || req.connection.remoteAddress;
     console.log();
@@ -63,22 +63,6 @@ function logRequests(req, res, next) {
     console.log(chalk.blue("Request:", req.originalUrl));
     next();
 }
-
-// Git pull request
-app.post('/deploy', (req, res) => {
-    exec('git pull origin main', (err, stdout, stderr) => {
-        if (err) {
-            console.error(err);
-            return res.status(500).send('Error while updating repository');
-        }
-
-        console.log(`stdout: ${stdout}`);
-        console.log(`stderr: ${stderr}`);
-
-        res.status(200).send('Repository updated successfully');
-        process.exit(0);
-    });
-});
 
 // Start server
 const port = config.server.port || 5000;
