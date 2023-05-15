@@ -214,50 +214,58 @@ https://github.com/imakewebthings/waypoints/blog/master/licenses.txt
 $(function () {
     // Get the form.
     var form = $('#contact-form');
-
+  
     // Get the messages div.
     var formMessages = $('.form-message');
-
+  
     // Set up an event listener for the contact form.
     form.submit(function (e) {
-        // Stop the browser from submitting the form.
-        e.preventDefault();
-
-        // Serialize the form data.
-        var formData = form.serialize();
-
-        // Submit the form using AJAX.
-        $.ajax({
-            type: 'POST',
-            url: form.attr('action'),
-            data: formData,
-            dataType: 'json' // Specify the response data type as JSON
-        })
+      e.preventDefault(); // Prevent the default form submission.
+  
+      // Disable the submit button to prevent multiple submissions.
+      form.find('button[type="submit"]').prop('disabled', true);
+  
+      // Clear previous messages.
+      formMessages.empty();
+  
+      // Serialize the form data.
+      var formData = form.serialize();
+  
+      // Send the AJAX request.
+      $.ajax({
+        type: 'POST',
+        url: form.attr('action'),
+        data: formData,
+        dataType: 'json',
+        beforeSend: function () {
+          // Display a loading spinner or message if desired.
+          // Example: formMessages.html('<span class="loading">Sending...</span>');
+        }
+      })
         .done(function (response) {
-            // Check the response for success or error.
-            if (response.success) {
-                // Clear the form.
-                form[0].reset();
-                // Display success message.
-                formMessages.removeClass('error');
-                formMessages.addClass('success');
-                formMessages.text(response.message);
-            } else {
-                // Display error message.
-                formMessages.removeClass('success');
-                formMessages.addClass('error');
-                formMessages.text(response.message);
-            }
+          // Handle the response on success.
+          if (response.success) {
+            // Clear the form.
+            form[0].reset();
+            // Display success message.
+            formMessages.addClass('success').text(response.message);
+          } else {
+            // Display error message.
+            formMessages.addClass('error').text(response.message);
+          }
         })
         .fail(function (xhr, textStatus, error) {
-            // Display error message if AJAX request fails.
-            formMessages.removeClass('success');
-            formMessages.addClass('error');
-            if (xhr.responseText !== '') {
-                formMessages.text(xhr.responseText);
-            } else {
-                formMessages.text('Oops! An error occurred and your message could not be sent.');
-            }
+          // Handle the request failure.
+          var errorMessage = 'Oops! An error occurred and your message could not be sent.';
+          if (xhr.responseText !== '') {
+            errorMessage = xhr.responseText;
+          }
+          formMessages.addClass('error').text(errorMessage);
+        })
+        .always(function () {
+          // Re-enable the submit button.
+          form.find('button[type="submit"]').prop('disabled', false);
         });
     });
-});
+  });
+  
