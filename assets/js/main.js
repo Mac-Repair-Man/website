@@ -52,6 +52,36 @@
         });
     });
 
+    var titles = [
+        "Get Your Mac Fixed Fast & Reliable",
+        "Quality Mac Repair Solutions",
+        "Trusted by Thousands of Satisfied Customers",
+        "Fast & Efficient Mac Repairs",
+        "Expert Mac Repair Services",
+        "Reliable Mac Support for Your Needs",
+        "Affordable Mac Repair Solutions",
+        "Mac Troubleshooting and Fixes",
+        "Quick and Professional Mac Repairs",
+        "Mac Service You Can Rely On",
+        "Mac Repair Experts at Your Service",
+        "Fast Turnaround Mac Repairs",
+        "Premium Mac Repair Services",
+        "Comprehensive Mac Diagnosis and Fixes",
+        "Top-notch Mac Repair Specialists",
+        "Efficient Solutions for Mac Issues",
+        "Your Trusted Mac Repair Partner",
+        "Mac Repair Made Simple and Easy",
+        "Mac Performance Optimization Services",
+        "Quality Parts for Mac Repairs"
+    ];
+
+    // Select a random title from the array
+    var randomIndex = Math.floor(Math.random() * titles.length);
+    var dynamicH1 = document.getElementById("dynamic-h1");
+
+    // Set the random title
+    dynamicH1.innerHTML = titles[randomIndex];
+
     //  Star Scrolling nav
     $('a.js-scroll[href*="#"]:not([href="#"])').on("click", function () {
         if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
