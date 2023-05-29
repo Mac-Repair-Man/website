@@ -2,27 +2,11 @@
 The main official website for the Mac Repair Man that allows customers to view our services, prices, and book appointments.
 
 ## Technologies Used
-- Node.js v16.13.1
-- Express.js v4.18.2
-- EJS v3.1.8
 - HTML5
 - CSS3
-
-## Getting Started
-To set up and run the website locally:
-
-```
-# Clone this repository
-git clone https://github.com/Mac-Repair-Man/website.git
-# Configure config.json
-cd website
-nano config.json
-# Install the required dependencies
-npm install
-# Start the server
-npm start
-```
-- Open a web browser and navigate to http://localhost:5000 to view the website.
+- JavaScript
+- Bootstrap CSS
+- JQuery
 
 ## Contributing
 To contribute to this project:

@@ -255,20 +255,21 @@ ul {
 .back-to-top {
   position: fixed;
   cursor: pointer;
-  top: 0;
-  right: 15px;
+  bottom: 20px;
+  right: 20px;
   color: #ffffff;
   background: #ec3746;
   z-index: 4;
-  width: 40px;
+  width: 50px;
   text-align: center;
-  height: 42px;
-  line-height: 42px;
+  height: 50px;
+  line-height: 50px;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: 0.9s;
-  transition: 0.9s;
+  -webkit-transition: opacity 0.3s, visibility 0.3s;
+  transition: opacity 0.3s, visibility 0.3s;
   border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .back-to-top:before {

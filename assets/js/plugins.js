@@ -211,61 +211,43 @@ https://github.com/imakewebthings/waypoints/blog/master/licenses.txt
 
 })(jQuery);
 
-$(function () {
-    // Get the form.
-    var form = $('#contact-form');
-  
-    // Get the messages div.
-    var formMessages = $('.form-message');
-  
-    // Set up an event listener for the contact form.
-    form.submit(function (e) {
-      e.preventDefault(); // Prevent the default form submission.
-  
-      // Disable the submit button to prevent multiple submissions.
-      form.find('button[type="submit"]').prop('disabled', true);
-  
-      // Clear previous messages.
-      formMessages.empty();
-  
-      // Serialize the form data.
-      var formData = form.serialize();
-  
-      // Send the AJAX request.
-      $.ajax({
-        type: 'POST',
-        url: form.attr('action'),
-        data: formData,
-        dataType: 'json',
-        beforeSend: function () {
-          // Display a loading spinner or message if desired.
-          // Example: formMessages.html('<span class="loading">Sending...</span>');
-        }
-      })
-        .done(function (response) {
-          // Handle the response on success.
-          if (response.success) {
-            // Clear the form.
-            form[0].reset();
-            // Display success message.
-            formMessages.addClass('success').text(response.message);
-          } else {
-            // Display error message.
-            formMessages.addClass('error').text(response.message);
-          }
-        })
-        .fail(function (xhr, textStatus, error) {
-          // Handle the request failure.
-          var errorMessage = 'Oops! An error occurred and your message could not be sent.';
-          if (xhr.responseText !== '') {
-            errorMessage = xhr.responseText;
-          }
-          formMessages.addClass('error').text(errorMessage);
-        })
-        .always(function () {
-          // Re-enable the submit button.
-          form.find('button[type="submit"]').prop('disabled', false);
-        });
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("contact-form");
+    const sendButton = document.getElementById("send-button");
+    const formMessage = document.getElementById("form-message");
+
+    sendButton.addEventListener("click", function () {
+        // Disable the send button to prevent multiple submissions
+        sendButton.disabled = true;
+        sendButton.textContent = "Sending...";
+        sendButton.classList.add("sending");
+
+        // Create a new FormData object to store the form data
+        const formData = new FormData(form);
+
+        // Send the form data using AJAX
+        const xhr = new XMLHttpRequest();
+        xhr.open("POST", "/contact");
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === XMLHttpRequest.DONE) {
+                if (xhr.status === 200) {
+                    // Display success message
+                    formMessage.textContent = "Thank you for your message! We will respond shortly!";
+                    formMessage.classList.add("success");
+                    form.reset();
+                    sendButton.classList.remove("sending");
+                    sendButton.classList.add("success");
+                } else {
+                    // Display error message
+                    formMessage.textContent = "An error occurred while sending the email.";
+                    formMessage.classList.add("error");
+                    sendButton.classList.remove("sending");
+                }
+                sendButton.disabled = false;
+                sendButton.textContent = "Send Message";
+            }
+        };
+        xhr.send(formData);
     });
-  });
-  
+});
+

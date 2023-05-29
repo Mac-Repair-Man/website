@@ -429,7 +429,7 @@
 }
 
 .about-area .bg-shape {
-  background-image: url(/img/bg-shape-1.png);
+  background-image: url(/assets/img/bg-shape-1.png);
   background-repeat: no-repeat;
   background-position: right center;
   position: absolute;
@@ -539,7 +539,7 @@
   position: relative;
   color: #fff;
   text-align: center;
-  background: url(/img/counter-bg.jpg);
+  background: url(/assets/img/counter-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -666,4 +666,30 @@ textarea:focus {
   color: #fff;
   padding: 10px 15px;
   border-radius: 3px;
+}
+
+.button {
+  transition: background-color 0.3s;
+}
+
+.sending::after {
+  content: "...";
+  animation: ellipsis 1s infinite;
+}
+
+.success {
+  background-color: green;
+  outline: green;
+}
+
+@keyframes ellipsis {
+  0% {
+    content: ".";
+  }
+  33% {
+    content: "..";
+  }
+  66% {
+    content: "...";
+  }
 }
