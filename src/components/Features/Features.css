@@ -1,0 +1,97 @@
+/**************************************
+ ** - 05 - Features Section CSS
+ **************************************/
+.features-section .section-title {
+  margin-bottom: 35px;
+}
+
+.single-features-item {
+  position: relative;
+  z-index: 1;
+  display: block;
+  padding: 40px 25px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #ffffff;
+  margin-top: 30px;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 2px 25px 0px rgb(110, 110, 110, 0.12);
+  -moz-box-shadow: 0px 2px 25px 0px rgb(110, 110, 110, 0.12);
+  box-shadow: 0px 2px 25px 0px rgb(110, 110, 110, 0.12);
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+}
+
+.single-features-item:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  border-bottom: 2px solid #ec3746;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transform: scaleX(0);
+  -webkit-transition: all 400ms ease-out;
+  transition: all 400ms ease-out;
+  will-change: transform;
+}
+
+.single-features-item:hover:before {
+  transform: scaleX(1);
+}
+
+.features-icon {
+  display: inline-block;
+  margin-bottom: 25px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  will-change: transform;
+}
+
+.features-icon i {
+  color: #ec3746;
+  font-size: 38px;
+  width: 75px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  background: rgb(215, 215, 215, 0.17);
+  border-radius: 50%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.single-features-item h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 0;
+  -webkit-transition: all 400ms ease-out;
+  transition: all 400ms ease-out;
+}
+
+.single-features-item h3 a {
+  display: inline-block;
+}
+
+.single-features-item p {
+  font-size: 15px;
+  margin-top: 15px;
+  margin-bottom: 0;
+  -webkit-transition: all 400ms ease-out;
+  transition: all 400ms ease-out;
+  will-change: transform;
+}
+
+.single-features-item:hover {
+  -webkit-transform: translateY(-7px);
+  transform: translateY(-7px);
+}
+
+.single-features-item:hover .features-icon i {
+  color: #ffffff;
+  background: #ec3746;
+}

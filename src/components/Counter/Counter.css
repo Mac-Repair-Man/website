@@ -1,0 +1,51 @@
+/**************************************
+ * Counter Section Style
+ *************************************/
+
+.counter-area {
+  text-align: center;
+  background-color: #f9f9fa;
+  position: relative;
+  color: #fff;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 1;
+}
+
+.counter-area::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.8;
+  z-index: -1;
+  background: #000;
+}
+
+.counter-area .section-title h5 {
+  color: #ffffff;
+}
+
+.counter-area .section-title h2 {
+  color: #fff;
+}
+
+.counter-contents h2 {
+  color: #fff;
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  word-spacing: -10px;
+}
+
+.counter-contents h3 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}

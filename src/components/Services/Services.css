@@ -1,0 +1,66 @@
+/**************************************
+ * Service Section Style
+ *************************************/
+
+.services-area .section-title {
+  margin-bottom: 45px;
+}
+
+.single-services-box {
+  padding: 30px 15px;
+  text-align: center;
+  background-color: #ffffff;
+  margin-top: 30px;
+  display: block;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 15px 0px rgb(72, 73, 121, 0.15);
+  -moz-box-shadow: 0px 0px 15px 0px rgb(72, 73, 121, 0.15);
+  box-shadow: 0px 0px 15px 0px rgb(72, 73, 121, 0.15);
+  -webkit-transition: all 400ms ease-out;
+  transition: all 400ms ease-out;
+  will-change: transform;
+}
+
+.single-services-box .services-img img {
+  display: inline-block;
+  max-width: 50%;
+}
+
+.single-services-box h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.single-services-box h3 a {
+  display: inline-block;
+}
+
+.single-services-box:hover {
+  -webkit-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+
+.single-services-box .color-icon-1 {
+  box-shadow: 0 5px 25px 0px rgb(112, 208, 0, 0.25);
+}
+
+.single-services-box .color-icon-2 {
+  box-shadow: 0 5px 25px 0px rgb(255, 170, 0, 0.25);
+}
+
+.single-services-box .color-icon-3 {
+  box-shadow: 0 5px 25px 0px rgb(253, 40, 112, 0.25);
+}
+
+.single-services-box .color-icon-4 {
+  box-shadow: 0 5px 25px 0px rgb(33, 150, 243, 0.25);
+}
+
+.single-services-box .color-icon-5 {
+  box-shadow: 0 5px 25px 0px rgb(126, 70, 226, 0.25);
+}
+
+.single-services-box .color-icon-6 {
+  box-shadow: 0 5px 25px 0px rgb(192, 42, 218, 0.25);
+}
