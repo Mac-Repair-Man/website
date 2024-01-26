@@ -3,7 +3,6 @@ import ReactDOM from "react-dom/client";
 import { Helmet } from "react-helmet";
 import "./index.css";
 
-
 // Components
 import Navbar from "./components/Navbar/Navbar";
 import Landing from "./components/Landing/Landing";

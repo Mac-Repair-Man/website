@@ -1,12 +1,29 @@
 # Mac Repair Man
-The main official website for the Mac Repair Man that allows customers to view our services, prices, and book appointments.
+The main official website for the Mac Repair Man that allows customers to view our services, nearest Repair Man location, and book appointments.
 
 ## Technologies Used
-- HTML5
-- CSS3
 - JavaScript
-- Bootstrap CSS
-- JQuery
+- ReactJS
+- CSS3
+
+## Getting Started
+To get started, clone this repository to your local machine.
+
+```bash
+$ git clone https://github.com/Mac-Repair-Man/website.git
+```
+
+Next, install the necessary dependencies.
+
+```bash
+$ npm install
+```
+
+Finally, run the development server.
+
+```bash
+$ npm start
+```
 
 ## Contributing
 To contribute to this project:
@@ -20,7 +37,7 @@ To contribute to this project:
 Please ensure that your code follows the existing code style and conventions, and includes appropriate tests and documentation.
 
 ## License
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/Mac-Repair-Man/website/blob/main/LICENSE) file for details.
 
 ## Contact
 If you have any questions or feedback about this project, please contact us at info@macrepairman.ca.
