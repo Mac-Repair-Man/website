@@ -1,0 +1,25 @@
+---
+import "../styles/Global.css";
+
+// Components Imports
+import Layout from "../layouts/Layout.astro";
+import Nav from "../components/Nav.astro";
+import Landing from "../components/Landing.astro";
+import Features from "../components/Features.astro";
+import About from "../components/About.astro";
+import Services from "../components/Services.astro";
+import Repairs from "../components/Repairs.astro";
+import Counter from "../components/Counter.jsx";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="Mac Repair Man">
+  <Nav />
+  <Landing />
+  <Features />
+  <About />
+  <Services />
+  <Repairs />
+  <Counter client:load />
+  <Footer />
+</Layout>

@@ -1,0 +1,335 @@
+/**************************************
+ ** - 07 - Services Section CSS
+ **************************************/
+.services-section .section-title {
+  margin-bottom: 35px;
+}
+
+.single-services-item {
+  position: relative;
+  z-index: 1;
+  display: block;
+  padding: 35px 30px;
+  text-align: left;
+  border-radius: 5px;
+  background-color: #ffffff;
+  margin-top: 30px;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 2px 25px 0px rgb(110, 110, 110, 0.12);
+  -moz-box-shadow: 0px 2px 25px 0px rgb(110, 110, 110, 0.12);
+  box-shadow: 0px 2px 25px 0px rgb(110, 110, 110, 0.12);
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+}
+
+.services-icon {
+  color: #ec3746;
+  font-size: 37px;
+  width: 80px;
+  height: 80px;
+  padding: 17px 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  background: -webkit-gradient(
+    90deg,
+    rgb(215, 215, 215, 0.03) 0%,
+    rgb(215, 215, 215, 0.2) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgb(215, 215, 215, 0.03) 0%,
+    rgb(215, 215, 215, 0.2) 100%
+  );
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.single-services-item h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 0;
+  -webkit-transition: all 400ms ease-out;
+  transition: all 400ms ease-out;
+}
+
+.single-services-item h3 a {
+  display: inline-block;
+}
+
+.single-services-item p {
+  font-size: 15px;
+  margin-top: 15px;
+  margin-bottom: 0;
+  -webkit-transition: all 400ms ease-out;
+  transition: all 400ms ease-out;
+  will-change: transform;
+}
+
+.single-services-item .services-btn-link {
+  margin-top: 16px;
+}
+
+.single-services-item .services-btn-link .services-link {
+  position: relative;
+  display: inline-block;
+  color: #ec3746;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: underline;
+  -webkit-transition: all 400ms ease-out;
+  transition: all 400ms ease-out;
+}
+.single-services-item .services-btn-link .services-link i {
+  position: absolute;
+  top: 5.5px;
+  font-size: 13px;
+  padding-left: 6px;
+}
+
+/**************************************
+ ** - 07 - Services Two Section CSS
+ **************************************/
+.services-section-two {
+  position: relative;
+  z-index: 1;
+}
+
+.single-services-two {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #ffffff;
+  margin-bottom: 30px;
+  overflow: hidden;
+  -webkit-box-shadow: -1px 3px 20px 0px rgba(82, 90, 101, 0.1);
+  -moz-box-shadow: -1px 3px 20px 0px rgba(82, 90, 101, 0.1);
+  box-shadow: -1px 3px 20px 0px rgba(82, 90, 101, 0.1);
+  -webkit-transition: all 400ms ease-out;
+  transition: all 400ms ease-out;
+  will-change: transform;
+}
+.single-services-two:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  border-bottom: 3px solid #ec3746;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  transform: scaleX(0);
+  -webkit-transition: all 400ms ease-out;
+  transition: all 400ms ease-out;
+  will-change: transform;
+}
+.single-services-two:hover:before {
+  transform: scaleX(1);
+}
+
+.single-services-two .services-two-img img {
+  display: block;
+  width: 100%;
+}
+.single-services-two .services-two-info {
+  padding: 30px 20px;
+}
+
+.single-services-two .services-two-info h3 {
+  font-size: 18px;
+  margin-bottom: 0;
+  -webkit-transition: all 400ms ease-out;
+  transition: all 400ms ease-out;
+}
+
+.single-services-two .services-two-info h3 a {
+  display: inline-block;
+}
+
+.single-services-two .services-two-info p {
+  font-size: 15px;
+  margin-top: 12px;
+  margin-bottom: 0;
+  -webkit-transition: all 400ms ease-out;
+  transition: all 400ms ease-out;
+}
+
+.single-services-two .services-two-info .services-two-btn-box {
+  margin-top: 15px;
+}
+
+.single-services-two
+  .services-two-info
+  .services-two-btn-box
+  .services-btn-link {
+  display: inline-block;
+  font-size: 15px;
+  color: #333;
+  font-weight: 500;
+  -webkit-transition: all 400ms ease-out;
+  transition: all 400ms ease-out;
+  will-change: transform;
+}
+
+.single-services-two .services-two-btn-box a i {
+  color: #ec3746;
+  font-size: 14px;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border: 1px solid #ec3746;
+  background-color: transparent;
+  margin-right: 8px;
+  border-radius: 30px;
+  -webkit-transition: all 400ms ease-out;
+  transition: all 400ms ease-out;
+}
+
+.single-services-two:hover {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+
+.single-services-two:hover h3 {
+  color: #333;
+}
+
+.single-services-two:hover h3 a {
+  color: #333;
+}
+
+.single-services-two:hover p {
+  color: #333;
+}
+
+.single-services-two:hover .services-two-btn-box .services-btn-link {
+  color: #ec3746;
+}
+
+.single-services-two:hover .services-two-btn-box i {
+  color: #ffffff;
+  background-color: #ec3746;
+}
+
+/****************************************
+ ** - 08 - Services Details CSS
+ ****************************************/
+.services-details-image {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.services-details-image img {
+  border-radius: 5px;
+}
+
+.services-details-content h3 {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+.services-details-content .features-text {
+  margin-top: 20px;
+}
+
+.services-details-content .features-text h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.services-details-content .features-text .service-features-list {
+  margin-bottom: 25px;
+}
+
+.services-details-content .features-text .service-features-list li {
+  color: #747576;
+  margin-bottom: 10px;
+}
+
+.services-details-content .features-text .service-features-list li:last-child {
+  margin-bottom: 0px;
+}
+
+.services-details-content .features-text .service-features-list i {
+  color: #ec3746;
+  font-size: 16px;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.services-widget .widget {
+  padding: 30px 25px;
+  margin-top: 35px;
+  border-radius: 5px;
+  background-color: rgb(11, 11, 49, 0.05);
+}
+
+.services-widget .widget:first-child {
+  margin-top: 0;
+}
+
+.services-widget .widget .widget-title {
+  position: relative;
+  font-size: 22px;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+  border-bottom: 1px solid #ffffff;
+}
+
+.services-widget .widget .widget-title::before {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 50px;
+  height: 1px;
+  background-color: #ec3746;
+}
+
+.services-widget .widget_categories ul {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+
+.services-widget .widget_categories ul li {
+  position: relative;
+  color: #747576;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.services-widget .widget_categories ul li:last-child {
+  margin-bottom: 0;
+}
+
+.services-widget .widget_categories ul li a {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 12px 15px;
+  display: block;
+  border-radius: 5px;
+  background-color: #ec3746;
+  transition: all ease 350ms;
+  -moz-transition: all ease 350ms;
+  -webkit-transition: all ease 350ms;
+}
+
+.services-widget .widget_categories ul li a:hover {
+  color: #ffffff;
+  background-color: #fd5a1b;
+}
+.widget_download_btn a {
+  padding: 12px 20px;
+  display: block;
+  border-radius: 5px;
+}
+.widget_download_btn a:first-child {
+  margin: 0 0 12px;
+}

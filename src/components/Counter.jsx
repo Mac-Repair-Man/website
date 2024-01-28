@@ -1,11 +1,7 @@
 import React, { useState, useEffect } from "react";
-import '../../index.css';
-import "./Counter.css";
+import "../styles/Counter.css";
 
 function Counter() {
-  const publicUrl = process.env.PUBLIC_URL;
-  const counterBg = `${publicUrl}/img/counter-bg.jpg`;
-
   // Initialize the counter value with zeros.
   const [counters, setCounters] = useState({
     years: 0,
@@ -44,7 +40,7 @@ function Counter() {
   return (
     <section
       className="counter-area section-padding"
-      style={{ backgroundImage: `url(${counterBg})` }}
+      style={{ backgroundImage: `url('/img/counter-bg.jpg')` }}
     >
       <div className="container">
         <div className="row">

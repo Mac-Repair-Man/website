@@ -1,0 +1,68 @@
+---
+import { FaPhone, FaEnvelope, FaHome } from "react-icons/fa";
+
+import "../styles/Footer.css";
+---
+
+<footer class="footer-area">
+    <div class="footer-top-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 footer-box-item">
+                    <div class="footer-content">
+                        <img src={"/img/logo.png"} alt="Brand" />
+                        <p>
+                            For fast, high-quality, and affordable Mac
+                            repairs, contact Mac Repair Man.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 footer-box-item">
+                    <div class="footer-content mid-content">
+                        <h3>Links</h3>
+                        <ul class="footer-link">
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="/contact">Contact Us</a></li>
+                            <li><a href="/terms">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 footer-box-item">
+                    <div class="footer-content">
+                        <h3>Contact Us</h3>
+                        <ul class="footer-link">
+                            <li>
+                                <FaPhone />
+                                {" "}
+                                <a href="tel:5195050058">(519) 505-0058</a>
+                            </li>
+                            <li>
+                                <FaEnvelope />
+                                {" "}
+                                <a href="mailto:info@macrepairman.ca">info@macrepairman.ca</a>
+                            </li>
+                            <li>
+                                <FaHome />
+                                {" "}
+                                556 King St East, Kitchener ON, Canada
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr />
+        </div>
+    </div>
+    <div class="footer-bottom-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer-copyright text-center">
+                        <p>Mac Repair Man &copy; 2014 - 2023. All Rights Reserved.</p>
+                        <p>Website Designed & Maintained by <a href="https://github.com/Mac-Repair-Man">Mac Repair Team</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

@@ -4,6 +4,7 @@ The main official website for the Mac Repair Man that allows customers to view o
 ## Technologies Used
 - JavaScript
 - ReactJS
+- AstroJS
 - CSS3
 
 ## Getting Started
@@ -22,7 +23,7 @@ $ npm install
 Finally, run the development server.
 
 ```bash
-$ npm start
+$ npm run dev
 ```
 
 ## Contributing

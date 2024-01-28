@@ -1,0 +1,102 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Search Engine Optimization -->
+		<title>{title}</title>
+		<meta name="description" content="Mac Repair Man is a trusted provider of fast and affordable Mac repair services in Kitchener-Waterloo, Ontario. We specialize in MacBook and iMac repairs. Contact us for reliable Mac upgrades and Apple device support." />
+		<meta name="keywords" content="Mac repair, MacBook repair, iMac repair, Apple repair, Mac upgrade, Kitchener, Waterloo, Ontario" />
+		<meta name="author" content="Mac Repair Man" />
+
+		<!-- Open Graph Meta Tags -->
+        <meta property="og:title" content="Mac Repair Services in Kitchener-Waterloo | Mac Repair Man">
+        <meta property="og:description" content="Mac Repair Man is a trusted provider of fast and affordable Mac repair services in Kitchener-Waterloo, Ontario. We specialize in MacBook and iMac repairs. Contact us for reliable Mac upgrades and Apple device support.">
+        <meta property="og:image" content="https://macrepairman.ca/assets/img/logo.png">
+        <meta property="og:url" content="https://macrepairman.ca">
+
+		<!-- Twitter / X Meta Tags -->
+        <meta name="twitter:title" content="Mac Repair Services in Kitchener-Waterloo | Mac Repair Man">
+        <meta name="twitter:description" content="Mac Repair Man is a trusted provider of fast and affordable Mac repair services in Kitchener-Waterloo, Ontario. We specialize in MacBook and iMac repairs. Contact us for reliable Mac upgrades and Apple device support.">
+        <meta name="twitter:image" content="https://macrepairman.ca/assets/img/logo.png">
+        <meta name="twitter:card" content="summary_large_image">
+
+		<!-- Schema.org Markup -->
+        <script type="application/ld+json">
+			{
+			"@context": "https://schema.org",
+			"@type": "Organization",
+			"name": "Mac Repair Man",
+			"url": "https://macrepairman.ca",
+			"logo": "https://macrepairman.ca/assets/img/logo.png",
+			"description": "Mac Repair Man is a trusted provider of fast and affordable Mac repair services in Kitchener-Waterloo, Ontario. We specialize in MacBook and iMac repairs. Contact us for reliable Mac upgrades and Apple device support.",
+			"address": {
+				"@type": "PostalAddress",
+				"streetAddress": "556 King St East",
+				"addressLocality": "Kitchener",
+				"addressRegion": "ON",
+				"postalCode": "N2G 2L8",
+				"addressCountry": "CA"
+			},
+			"contactPoint": {
+				"@type": "ContactPoint",
+				"telephone": "(519) 505-0058",
+				"email": "info@macrepairman.ca",
+				"contactType": "customer service"
+			}
+			}
+		</script>
+
+		<!-- Meta Tags -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<!-- Google Site Verification -->
+        <meta name="google-site-verification" content="Gn4rDyUtWi7WjL7nUeoRjWS9537DRR-XLYdT_hyot0Q">
+
+		<!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+		<!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/b43aa12feb.js" crossorigin="anonymous"></script>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
+
+		<!-- Site All Style Sheet CSS -->
+        <link href="/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/@icon/themify-icons/themify-icons.css">
+        <link href="/css/magnific-popup.css" rel="stylesheet">
+        <link href="/css/animate.min.css" rel="stylesheet">
+        <link href="/css/owl.carousel.min.css" rel="stylesheet">
+        <link href="/css/owl.theme.default.min.css" rel="stylesheet">
+
+		<!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/img/favicon/site.webmanifest">
+        <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+	</head>
+	<body>
+		<slot />
+
+		<!-- Site All Jquery JS -->
+        <script is:inline src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+        <script is:inline src="/js/bootstrap.min.js"></script>
+        <script is:inline src="/js/plugins.js"></script>
+
+        <!-- Site Main Custom JS -->
+        <script is:inline src="/js/main.js"></script>
+        
+		<!-- Google Analytics-->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-T5LKKGGWBR"></script>
+	</body>
+</html>
