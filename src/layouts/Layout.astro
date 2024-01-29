@@ -88,6 +88,11 @@ const { title } = Astro.props;
 	<body>
 		<slot />
 
+		<!-- Back to top button  -->
+		<div class="back-to-top">
+            <i class="fa fa-caret-up"></i><i class="fa fa-caret-up"></i>
+        </div>
+
 		<!-- Site All Jquery JS -->
         <script is:inline src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
         <script is:inline src="/js/bootstrap.min.js"></script>
