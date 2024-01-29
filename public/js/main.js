@@ -1,6 +1,5 @@
 (function ($) {
     "use strict";
-    var wind = $(window);
 
     var nav = $('nav');
     var navHeight = nav.outerHeight();
@@ -8,12 +7,6 @@
         if (!$('#mainNav').hasClass('navbar-reduce')) {
             $('#mainNav').addClass('navbar-reduce');
         }
-    });
-
-    // START PRELOADED
-    $(window).on('load', function () {
-        $('.preloader').fadeOut();
-        $('.preloader').delay(550).fadeOut('slow');
     });
 
     // Navbar Menu Reduce 
