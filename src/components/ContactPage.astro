@@ -1,6 +1,10 @@
 ---
 import "../styles/Contact.css";
+
+import { handleFormSubmit } from "../data/formScript.js";
 ---
+
+<!-- Small Landing Component -->
 <div class="page-title-area">
     <div class="d-table">
         <div class="d-table-cell">
@@ -17,6 +21,8 @@ import "../styles/Contact.css";
         </div>
     </div>
 </div>
+
+<!-- Contact Component -->
 <div class="contact-section contact-page-form section-padding">
     <div class="container">
         <div class="row">
@@ -63,7 +69,7 @@ import "../styles/Contact.css";
             <div class="col-lg-8 col-md-12">
                 <div class="contact-form contact-form-1">
                     <p class="form-message"></p>
-                    <form id="contact-form" class="form" action="php-mails.php" method="POST">
+                    <form id="contact-form" class="form" method="POST" onsubmit="{handleFormSubmit}">
                         <div class="row">
                             <div class="col-lg-6 col-md-12">
                                 <div class="form-group">
