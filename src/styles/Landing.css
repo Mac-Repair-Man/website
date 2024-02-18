@@ -8,6 +8,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-image: url(../img/mainbg.jpg);
   z-index: 1;
   padding-top: 150px;
   padding-bottom: 40px;
