@@ -92,7 +92,6 @@
   background-color: #f3f3f3;
   font-weight: 600;
   border-radius: 5px;
-  text-transform: capitalize;
   border-left: 2px solid #b4b7bd;
   transition: all 0.4s;
 }
@@ -192,4 +191,19 @@
   padding: 10px 15px;
   border-radius: 3px;
   margin-bottom: 30px;
+}
+
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 100%;
+  position: relative;
+  height: 0;
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }

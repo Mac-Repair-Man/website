@@ -6,11 +6,9 @@ import "../styles/Contact.css";
 import Layout from "../layouts/Layout.astro";
 import Nav from "../components/Nav.astro";
 import Footer from "../components/Footer.astro";
-
-import { handleFormSubmit } from "../data/formScript.js";
 ---
 
-<Layout title="Contact">
+<Layout title="Contact - Mac Repair Man">
     <Nav />
     <!-- Small Landing Component -->
     <div class="page-title-area">
@@ -53,7 +51,7 @@ import { handleFormSubmit } from "../data/formScript.js";
                                 <div class="single-contact-info-box">
                                     <div class="contact-info">
                                         <h6>Phone:</h6>
-                                        <p>+1 (519) 505-0058</p>
+                                        <p><a href="tel:+15195050058">+1 (519) 505-0058</a></p>
                                     </div>
                                     <div class="contact-info-bg-icon">
                                         <i class="pe-7s-call"></i>
@@ -64,7 +62,7 @@ import { handleFormSubmit } from "../data/formScript.js";
                                 <div class="single-contact-info-box">
                                     <div class="contact-info">
                                         <h6>Email:</h6>
-                                        <p>info@macrepairman.ca</p>
+                                        <p><a href="mailto:info@macrepairman.ca">info@macrepairman.ca</a></p>
                                     </div>
                                     <div class="contact-info-bg-icon">
                                         <i class="pe-7s-mail"></i>
@@ -75,40 +73,17 @@ import { handleFormSubmit } from "../data/formScript.js";
                     </div>
                 </div>
                 <div class="col-lg-8 col-md-12">
-                    <div class="contact-form contact-form-1">
-                        <p class="form-message"></p>
-                        <form id="contact-form" class="form" method="POST" onsubmit="{handleFormSubmit}">
-                            <div class="row">
-                                <div class="col-lg-6 col-md-12">
-                                    <div class="form-group">
-                                        <input type="text" name="name" id="name" class="form-control" required placeholder="Your Name">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-12">
-                                    <div class="form-group">
-                                        <input type="email" name="email" id="email" class="form-control" required placeholder="Your Email">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-12">
-                                    <div class="form-group">
-                                        <input type="text" name="phone" id="phone" required class="form-control" placeholder="Your Phone">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-12">
-                                    <div class="form-group">
-                                        <input type="text" name="subject" id="subject" class="form-control" required placeholder="Your Subject">
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 col-md-12">
-                                    <div class="form-group">
-                                        <textarea name="message" class="form-control" id="message" cols="30" rows="6" required placeholder="Your Message"></textarea>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 col-md-12">
-                                    <button type="submit" class="button">Send Message <span></span></button>
-                                </div>
-                            </div>
-                        </form>
+                    <div class="map-responsive">
+                        <iframe class="about-iframe"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5793.564435673089!2d-80.48758292292288!3d43.44426421651597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b8ad0f2fd653f%3A0x248785d41871647c!2sMac%20Repair%20Man!5e0!3m2!1sen!2sca!4v1679511174558!5m2!1sen!2sca"
+                            title="Location Map"
+                            width="560"
+                            height="400"
+                            style={{border: 0}}
+                            allowfullscreen
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
                     </div>
                 </div>
             </div>
