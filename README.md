@@ -1,46 +1,41 @@
 # Mac Repair Man
 The main official website for the Mac Repair Man that allows customers to view our services, nearest Repair Man location, and book appointments.
 
-## Technologies Used
-- JavaScript
-- ReactJS
-- AstroJS
-- CSS3
+## Table of Contents
+- [Technologies](#technologies)
+- [Installation](#installation)
+- [License](#license)
+- [Contact](#contact)
 
-## Getting Started
-To get started, clone this repository to your local machine.
+## Technologies
+This project is created with the following technologies:\
 
-```bash
-$ git clone https://github.com/Mac-Repair-Man/website.git
-```
+- [Astro](https://astro.build/)
+- [ReactJS](https://reactjs.org/)
+- [React-Icons](https://react-icons.github.io/react-icons/)
+- [Framer-Motion](https://www.framer.com/motion/)
+- [Vercel](https://vercel.com/)
 
-Next, install the necessary dependencies.
+## Installation
+To run this project locally, follow these steps below:
 
-```bash
-$ npm install
-```
+1. Clone this repository to your local machine:
+    ```bash
+    $ git clone https://github.com/Mac-Repair-Man/website.git
+    ```
 
-Finally, run the development server.
+2. Next, install the necessary dependencies:
+    ```bash
+    $ npm install
+    ```
 
-```bash
-$ npm run dev
-```
-
-## Contributing
-To contribute to this project:
-
-1. Fork this repository to your own GitHub account.
-2. Create a new branch for your changes.
-3. Make your changes and commit them with descriptive commit messages.
-4. Push your changes to your forked repository.
-5. Submit a pull request to merge your changes back into the original repository.
-
-Please ensure that your code follows the existing code style and conventions, and includes appropriate tests and documentation.
+3. Finally, run the development server:
+    ```bash
+    $ npm run dev
+    ```
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](https://github.com/Mac-Repair-Man/website/blob/main/LICENSE) file for details.
 
 ## Contact
-If you have any questions or feedback about this project, please contact us at info@macrepairman.ca.
-
-Thank you for using our website!
+If you have any questions, feel free to reach out to us at our [Email](info@macrepairman.ca) or [Website](https://macrepairman.ca/).
