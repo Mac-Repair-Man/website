@@ -1,4 +1,4 @@
-# Mac Repair Man
+# Mac Repair Man - Official Website
 The main official website for the Mac Repair Man that allows customers to view our services, nearest Repair Man location, and book appointments.
 
 ## Table of Contents
@@ -8,7 +8,7 @@ The main official website for the Mac Repair Man that allows customers to view o
 - [Contact](#contact)
 
 ## Technologies
-This project is created with the following technologies:\
+This project is created with the following technologies:
 
 - [Astro](https://astro.build/)
 - [ReactJS](https://reactjs.org/)
