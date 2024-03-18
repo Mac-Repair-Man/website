@@ -11,10 +11,10 @@ function Counter() {
   });
 
   useEffect(() => {
-    animateCounter("years", 20);
-    animateCounter("reviews", 300);
-    animateCounter("macsFixed", 31568);
-    animateCounter("happyCustomers", 29358);
+    animateCounter("years", 10);
+    animateCounter("reviews", 400);
+    animateCounter("macsFixed", 32568);
+    animateCounter("happyCustomers", 23358);
   }, []);
 
   const animateCounter = (counterName, targetValue) => {
