@@ -1,0 +1,79 @@
+---
+import "../styles/Global.css";
+import "../styles/ServicesPage.css";
+
+// Components Imports
+import Layout from "../layouts/Layout.astro";
+import Nav from "../components/Nav.astro";
+import Repairs from "../components/Repairs.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="Services - Mac Repair Man">
+    <Nav />
+    <!-- Small Landing Component -->
+    <div class="page-title-area">
+        <div class="d-table">
+            <div class="d-table-cell">
+                <div class="container">
+                    <div class="page-title-content">
+                        <h2>Our Services</h2>
+                        <ul>
+                            <li><a href="/">Home</a>
+                            </li>
+                            <li>Services</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="services-details-area section-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-md-12">
+                    <div class="services-details-content">
+                        <div class="services-details-image">
+                            <img src="/img/banner-bg2.jpg" alt="image">
+                        </div>
+                        
+                        <h3>Together We Can Fix Anything</h3>
+                        <p>At Mac Repair Man, we believe in the power of collaboration to overcome any challenge. Our dedicated team of experts is committed to providing top-notch repair services for all your Apple devices.</p>
+                        
+                        <div class="features-text">
+                            <h4>Broken Apple Device?</h4>
+                            <p>Facing issues with your Apple device? Trust us to bring it back to life. Our skilled technicians are equipped to handle a wide range of problems, ensuring your device functions seamlessly.</p>
+                            <ul class="service-features-list">
+                                <li>✓ Cracked Screen Repair - We fix shattered screens with precision.</li>
+                                <li>✓ Data Recovery - Trust us to recover your valuable data.</li>
+                                <li>✓ Broken Buttons - Swift solutions for malfunctioning buttons.</li>
+                                <li>✓ No Signal - Diagnosing and resolving signal issues efficiently.</li>
+                                <li>✓ Water Damage - Specialized treatment for liquid-damaged devices.</li>
+                                <li>✓ Battery Replacement - Revive your device with a new, reliable battery.</li>
+                            </ul>
+                            <p>With attention to detail and a commitment to excellence, Mac Repair Man is your go-to destination for all Apple device repairs.</p>
+                        </div>
+                    </div>
+                </div>
+				<div class="col-lg-4 col-md-12">
+					<aside class="services-widget">
+						<section class="widget widget_categories">
+							<h3 class="widget-title">Our Services</h3>
+							<ul>
+								<li>iPhone Repair</li>
+								<li>iMac Repairs</li>
+								<li>iPad Repairs</li>
+                                <li>iPod Repairs</li>
+								<li>Mac mini Repairs</li>
+								<li>Mac Pro Repairs</li>
+							</ul>
+						</section>
+					</aside>
+				</div>
+			</div>
+		</div>
+	</section>
+    <Repairs />
+    <Footer />
+</Layout>

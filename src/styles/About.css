@@ -1,0 +1,64 @@
+/**************************************
+ * About Section Style
+ *************************************/
+
+.about-area {
+  position: relative;
+  z-index: 1;
+}
+
+.about-area .bg-shape {
+  background-repeat: no-repeat;
+  background-position: right center;
+  position: absolute;
+  width: 700px;
+  height: 705px;
+  background-size: 80%;
+  top: 15px;
+  right: 0;
+  z-index: -1;
+}
+
+.about-content h5 {
+  color: #ec3746;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  letter-spacing: 0.3px;
+}
+
+.about-content h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.about-content h3 {
+  color: #ec3746;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.about-content-text p {
+  margin-bottom: 15px;
+}
+
+.about-image-wrapper {
+  text-align: center;
+}
+
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 100%;
+  position: relative;
+  height: 0;
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
