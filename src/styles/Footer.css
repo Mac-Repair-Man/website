@@ -22,6 +22,8 @@
   padding-left: 130px;
 }
 
+
+
 .footer-content img {
   margin-bottom: 30px;
 }
@@ -84,4 +86,14 @@
 
 .footer-copyright p {
   color: #fff;
+}
+
+@media (max-width: 768px) {
+  .desktop-svg {
+    display: none;
+  }
+
+  .footer-content.mid-content {
+    padding-left: 0;
+  }
 }
