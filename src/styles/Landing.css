@@ -2,13 +2,13 @@
  * Home Section Style
  *************************************/
 
-.home-area {
+ .home-area {
   color: #fff;
   text-align: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url(../img/mainbg.jpg);
+  background-image: url(/img/banner-bg1.jpg);
   z-index: 1;
   padding-top: 150px;
   padding-bottom: 40px;

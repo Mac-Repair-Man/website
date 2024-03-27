@@ -15,7 +15,7 @@
 }
 
 .footer-bottom-area {
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 .footer-content.mid-content {
@@ -84,4 +84,14 @@
 
 .footer-copyright p {
   color: #fff;
+}
+
+@media (max-width: 768px) {
+  .desktop-svg {
+    display: none;
+  }
+
+  .footer-content.mid-content {
+    padding-left: 0;
+  }
 }

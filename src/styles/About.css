@@ -62,3 +62,44 @@
   width: 100%;
   position: absolute;
 }
+
+.about-button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.about-button {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  padding: 10px 45px;
+  text-align: center;
+  font-size: 20px;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  border: 2px solid #c42228;
+  border-radius: 15px;
+  color: #fff;
+  background: #c42228;
+  cursor: pointer;
+  margin-top: 25px;
+  overflow: hidden;
+  transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+
+.about-button:hover {
+  color: #c42228;
+  background: transparent;
+}
+
+
+@media (max-width: 768px) {
+  .about-button {
+    padding: 10px 20px;
+  }
+}

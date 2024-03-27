@@ -133,7 +133,7 @@ button:focus {
   letter-spacing: 0.5px;
   font-weight: 600;
   border: 2px solid #c42228;
-  border-radius: 30px;
+  border-radius: 15px;
   color: #fff;
   background: #c42228;
   cursor: pointer;
@@ -288,7 +288,7 @@ ul {
   visibility: hidden;
   -webkit-transition: opacity 0.3s, visibility 0.3s;
   transition: opacity 0.3s, visibility 0.3s;
-  border-radius: 50%;
+  border-radius: 40%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -300,12 +300,12 @@ ul {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: #f35416;
+  background: #e70619;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  border-radius: 50%;
+  border-radius: 40%;
 }
 
 .back-to-top:hover:before,
@@ -497,40 +497,6 @@ ul {
   opacity: 1;
 }
 
-/* [ End Overlay ] */
-
-/* owl theme */
-
-.owl-theme .owl-nav.disabled + .owl-dots {
-  margin-top: 20px;
-}
-
-.owl-theme .owl-dots .owl-dot span {
-  width: 7px;
-  height: 7px;
-  margin: 5px 5px;
-  background-color: rgba(0, 0, 0, 0.1);
-  display: block;
-  transition: opacity 0.2s ease;
-  border-radius: 3px;
-  transition: 0.3s;
-  border: 2px solid transparent;
-}
-
-.owl-theme .owl-dots .owl-dot.active span {
-  background-color: #ec3746 !important;
-  width: 7px;
-  height: 7px;
-  transition: 0.3s;
-  -webkit-box-shadow: 0 1px 5px #ec3746;
-  box-shadow: 0 1px 5px #ec3746;
-}
-
-.owl-theme .owl-dots .owl-dot:hover span {
-  background-color: transparent;
-  border: 2px solid #ec3746;
-  transition: 0.3s;
-}
 
 /**************************************
    * Overlay Effect Bg image

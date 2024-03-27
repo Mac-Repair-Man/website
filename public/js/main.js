@@ -28,21 +28,18 @@
         }
     });
 
-    // Back to top button 
-    $(function () {
-        // Scroll Event
-        $(window).on('scroll', function () {
-            var scrolled = $(window).scrollTop();
-            if (scrolled > 300) $('.back-to-top').addClass('active');
-            if (scrolled < 300) $('.back-to-top').removeClass('active');
-        });
-        
-        // Click Event
-        $('.back-to-top').on('click', function () {
-            $("html, body").animate({
-                scrollTop: "0"
-            }, 500);
-        });
+    // Cache the back-to-top button
+    const backToTopButton = $('.back-to-top');
+
+    // Scroll Event
+    $(window).on('scroll', function () {
+        const scrolled = $(window).scrollTop();
+        backToTopButton.toggleClass('active', scrolled > 300);
+    });
+
+    // Click Event
+    backToTopButton.on('click', function () {
+        $("html, body").animate({ scrollTop: "0" }, 500);
     });
 
     // Closes responsive menu when a scroll trigger link is clicked
@@ -55,41 +52,4 @@
         target: '#mainNav',
         offset: navHeight
     });
-
-    // Testimonials owl
-    $('.testimonial-slide .owl-carousel').owlCarousel({
-        margin: 16,
-        autoplay: true,
-        autoplayTimeout: 4000,
-        nav: false,
-        smartSpeed: 800,
-        dots: true,
-        autoplayHoverPause: true,
-        loop: true,
-        responsiveClass: true,
-        responsive: {
-            0: {
-                items: 1
-            },
-            768: {
-                items: 2
-            },
-            1000: {
-                items: 3
-            }
-        }
-    });
-    
-    // HOME TYPED JS
-    if ($('.element').length) {
-        $('.element').each(function () {
-            $(this).typed({
-                strings: [$(this).data('text1'), $(this).data('text2'), $(this).data('text3'), $(this).data('text4')],
-                loop: $(this).data('loop') ? $(this).data('loop') : false,
-                backDelay: $(this).data('backdelay') ? $(this).data('backdelay') : 2000,
-                typeSpeed: 15,
-            });
-        });
-    }
-
 })(jQuery);

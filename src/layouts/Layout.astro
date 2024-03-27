@@ -11,45 +11,52 @@ const { title } = Astro.props;
 	<head>
 		<!-- Search Engine Optimization -->
 		<title>{title}</title>
-		<meta name="description" content="Mac Repair Man is a trusted provider of fast and affordable Mac repair services in Kitchener-Waterloo, Ontario. We specialize in MacBook and iMac repairs. Contact us for reliable Mac upgrades and Apple device support." />
+		<meta name="description" content="Trusted provider of fast, affordable Mac repair services in Kitchener-Waterloo, Ontario. Specializing in MacBook and iMac repairs. Contact us for Mac upgrades and Apple device support." />
 		<meta name="keywords" content="Mac repair, MacBook repair, iMac repair, Apple repair, Mac upgrade, Kitchener, Waterloo, Ontario" />
 		<meta name="author" content="Mac Repair Man" />
+		<meta name="robots" content="index, follow" />
+		<meta name="revisit-after" content="1 days" />
+		<meta name="language" content="English" />
 
 		<!-- Open Graph Meta Tags -->
         <meta property="og:title" content="Mac Repair Services in Kitchener-Waterloo | Mac Repair Man">
-        <meta property="og:description" content="Mac Repair Man is a trusted provider of fast and affordable Mac repair services in Kitchener-Waterloo, Ontario. We specialize in MacBook and iMac repairs. Contact us for reliable Mac upgrades and Apple device support.">
-        <meta property="og:image" content="https://macrepairman.ca/assets/img/logo.png">
+        <meta property="og:description" content="Mac Repair Man is a trusted provider of fast and affordable Mac repair services in Kitchener-Waterloo, Ontario. We specialize in MacBook and iMac repairs.">
+		<meta property="og:image" content="https://www.macrepairman.ca/img/logo.png">
         <meta property="og:url" content="https://macrepairman.ca">
+		<meta property="og:type" content="website">
 
 		<!-- Twitter / X Meta Tags -->
         <meta name="twitter:title" content="Mac Repair Services in Kitchener-Waterloo | Mac Repair Man">
-        <meta name="twitter:description" content="Mac Repair Man is a trusted provider of fast and affordable Mac repair services in Kitchener-Waterloo, Ontario. We specialize in MacBook and iMac repairs. Contact us for reliable Mac upgrades and Apple device support.">
-        <meta name="twitter:image" content="https://macrepairman.ca/assets/img/logo.png">
+        <meta name="twitter:description" content="Mac Repair Man is a trusted provider of fast and affordable Mac repair services in Kitchener-Waterloo, Ontario. We specialize in MacBook and iMac repairs.">
+		<meta name="twitter:image" content="https://www.macrepairman.ca/img/logo.png">
         <meta name="twitter:card" content="summary_large_image">
 
 		<!-- Schema.org Markup -->
         <script type="application/ld+json">
 			{
-			"@context": "https://schema.org",
-			"@type": "Organization",
-			"name": "Mac Repair Man",
-			"url": "https://macrepairman.ca",
-			"logo": "https://macrepairman.ca/assets/img/logo.png",
-			"description": "Mac Repair Man is a trusted provider of fast and affordable Mac repair services in Kitchener-Waterloo, Ontario. We specialize in MacBook and iMac repairs. Contact us for reliable Mac upgrades and Apple device support.",
-			"address": {
-				"@type": "PostalAddress",
-				"streetAddress": "556 King St East",
-				"addressLocality": "Kitchener",
-				"addressRegion": "ON",
-				"postalCode": "N2G 2L8",
-				"addressCountry": "CA"
-			},
-			"contactPoint": {
-				"@type": "ContactPoint",
-				"telephone": "(519) 505-0058",
-				"email": "info@macrepairman.ca",
-				"contactType": "customer service"
-			}
+				"@context": "https://schema.org",
+				"@type": "LocalBusiness",
+				"name": "Mac Repair Man",
+				"url": "https://macrepairman.ca",
+				"logo": "https://www.macrepairman.ca/img/icon.png",
+				"image": "https://www.macrepairman.ca/img/logo.png",
+				"description": "Mac Repair Man is a trusted provider of fast and affordable Mac repair services in Kitchener-Waterloo, Ontario. We specialize in MacBook and iMac repairs. Contact us for reliable Mac upgrades and Apple device support.",
+				"telephone": "5195050058",
+				"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "556 King St E",
+					"addressLocality": "Kitchener-Waterloo",
+					"addressRegion": "ON",
+					"postalCode": "N2G 2M1",
+					"addressCountry": "CA"
+				},
+				"geo": {
+					"@type": "GeoCoordinates",
+					"latitude": "43.4456235172815",
+					"longitude": "-80.4795669268574"
+				},
+				"openingHours": "Mo,Tu,We,Th,Fr 11:00-16:00",
+				"priceRange": "$$"
 			}
 		</script>
 
