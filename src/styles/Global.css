@@ -288,7 +288,7 @@ ul {
   visibility: hidden;
   -webkit-transition: opacity 0.3s, visibility 0.3s;
   transition: opacity 0.3s, visibility 0.3s;
-  border-radius: 50%;
+  border-radius: 40%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -300,12 +300,12 @@ ul {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: #f35416;
+  background: #e70619;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  border-radius: 50%;
+  border-radius: 40%;
 }
 
 .back-to-top:hover:before,
