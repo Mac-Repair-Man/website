@@ -1,7 +1,7 @@
 .page-title-area {
   position: relative;
   z-index: 1;
-  background-image: url(/img/banner-bg1.jpg);
+  background-image: url(/img/banner-bg3.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -134,7 +134,7 @@
 
 .contact-information-box-1 .contact-info h6 {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 20px;
   color: #333;
   margin-bottom: 7px;
   text-transform: capitalize;
@@ -142,7 +142,7 @@
 
 .contact-information-box-1 .contact-info p {
   color: #333;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 500;
   margin: 0;
 }
@@ -162,36 +162,6 @@
 
 .contact-information-box-1 .single-contact-info-box .contact-info-bg-icon i {
   font-size: 100px;
-}
-
-.contact-section .contact-form .form-group {
-  margin-bottom: 30px;
-}
-
-.contact-section .contact-form form textarea.form-control {
-  height: auto;
-  padding-top: 15px;
-  line-height: initial;
-}
-
-.contact-section .form-message {
-  margin: 0;
-}
-
-.contact-section .form-message.success {
-  background: #03b103;
-  color: #ffffff;
-  padding: 10px 15px;
-  border-radius: 3px;
-  margin-bottom: 30px;
-}
-
-.contact-section .form-message.error {
-  background: #ff4d15;
-  color: #ffffff;
-  padding: 10px 15px;
-  border-radius: 3px;
-  margin-bottom: 30px;
 }
 
 .map-responsive {
