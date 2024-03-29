@@ -4,12 +4,13 @@ import { motion } from "framer-motion";
 
 import "../styles/Landing.css";
 
+let title;
 const getRandomTitle = () => {
   const randomIndex = Math.floor(Math.random() * titles.length);
-  return titles[randomIndex];
+  title = titles[randomIndex];
 };
 
-const title = getRandomTitle();
+getRandomTitle();
 ---
 
 <section id="home" class="home-area hero-equal-height section-padding">

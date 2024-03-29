@@ -91,10 +91,6 @@
 }
 
 @media (max-width: 768px) {
-  .desktop-svg {
-    display: none;
-  }
-
   .footer-content.mid-content {
     padding-left: 0;
   }

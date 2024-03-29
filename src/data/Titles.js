@@ -12,7 +12,7 @@ export const titles = [
   "Mac Repair Experts at Your Service",
   "Fast Turnaround Mac Repairs",
   "Premium Mac Repair Services",
-  "Comprehensive Mac Diagnosis and Fixes",
+  "Extensive Mac Diagnosis and Fixes",
   "Top-notch Mac Repair Specialists",
   "Efficient Solutions for Mac Issues",
   "Your Trusted Mac Repair Partner",
