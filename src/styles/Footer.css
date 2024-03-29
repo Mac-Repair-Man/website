@@ -6,6 +6,10 @@
   background-color: #222020;
 }
 
+.footer-bottom-area {
+  background-color: #1a1a1a;
+}
+
 .footer-area svg {
   display: inline-block;
 }

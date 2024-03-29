@@ -31,10 +31,17 @@
     // Cache the back-to-top button
     const backToTopButton = $('.back-to-top');
 
+    let lastScrollTop = 0;
+
     // Scroll Event
     $(window).on('scroll', function () {
         const scrolled = $(window).scrollTop();
-        backToTopButton.toggleClass('active', scrolled > 300);
+        if (scrolled > 300 && scrolled > lastScrollTop) {
+            backToTopButton.addClass('active');
+        } else {
+            backToTopButton.removeClass('active');
+        }
+        lastScrollTop = scrolled;
     });
 
     // Click Event
