@@ -97,6 +97,8 @@ const { title } = Astro.props;
         <link href="/css/animate.min.css" rel="stylesheet">
         <link href="/css/owl.carousel.min.css" rel="stylesheet">
         <link href="/css/owl.theme.default.min.css" rel="stylesheet">
+		<link href="/css/cookie.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.0/dist/cookieconsent.css">
 
 		<!-- Favicons -->
         <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
@@ -109,6 +111,9 @@ const { title } = Astro.props;
 	</head>
 	<body>
 		<slot />
+
+		<!-- Cookie Consent -->
+		<script type="module" src="/js/cookieconsent-config.js"></script>
 
 		<!-- Back to top button  -->
 		<div class="back-to-top">
