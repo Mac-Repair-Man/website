@@ -1,7 +1,10 @@
 ---
-import { FaPhone, FaEnvelope, FaHome } from "react-icons/fa";
-
 import "../styles/Footer.css";
+
+import { FaPhone, FaEnvelope, FaHome } from "react-icons/fa";
+import { Image } from "astro:assets";
+
+import logoImage from "../images/logo.png";
 ---
 
 <footer class="footer-area">
@@ -10,7 +13,7 @@ import "../styles/Footer.css";
             <div class="row">
                 <div class="col-lg-4 col-md-6 footer-box-item">
                     <div class="footer-content">
-                        <img src={"/img/logo.png"} alt="Brand" />
+                        <Image src={logoImage} alt="Brand" loading="eager" />
                         <p>
                             For fast, high-quality, and affordable Mac
                             repairs, contact Mac Repair Man.
