@@ -1,4 +1,7 @@
 ---
+import Nav from "../components/Nav.astro";
+import Footer from "../components/Footer.astro";
+
 interface Props {
 	title: string;
 }
@@ -110,7 +113,9 @@ const { title } = Astro.props;
         <meta name="theme-color" content="#ffffff">
 	</head>
 	<body>
+		<Nav />
 		<slot />
+		<Footer />
 
 		<!-- Cookie Consent -->
 		<script type="module" src="/js/cookieconsent-config.js"></script>

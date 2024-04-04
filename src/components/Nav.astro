@@ -1,5 +1,9 @@
 ---
 import "../styles/Nav.css"
+
+import { Image } from "astro:assets";
+
+import logoImage from "../images/logo.png"
 ---
 
 <header class="header-navber-area">
@@ -25,7 +29,7 @@ import "../styles/Nav.css"
     <nav class="navbar navbar-b navbar-trans navbar-expand-lg" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll" href="/">
-          <img src="/img/logo.png" class="white-logo" alt="logo" loading="lazy"/>           
+          <Image src={logoImage} class="white-logo" alt="logo" loading="eager" />           
         </a>
         <button class="navbar-toggler collapsed" type="button"
           data-toggle="collapse" data-target="#navbarDefault"

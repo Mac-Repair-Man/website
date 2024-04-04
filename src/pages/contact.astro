@@ -4,12 +4,9 @@ import "../styles/Contact.css";
 
 // Components Imports
 import Layout from "../layouts/Layout.astro";
-import Nav from "../components/Nav.astro";
-import Footer from "../components/Footer.astro";
 ---
 
 <Layout title="Contact - Mac Repair Man">
-    <Nav />
     <!-- Small Landing Component -->
     <div class="page-title-area">
         <div class="d-table">
@@ -89,7 +86,7 @@ import Footer from "../components/Footer.astro";
                             height="400"
                             style={{border: 0}}
                             allowfullscreen
-                            loading="lazy"
+                            loading="eager"
                             referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
                     </div>
@@ -97,5 +94,4 @@ import Footer from "../components/Footer.astro";
             </div>
         </div>
     </div>
-    <Footer />
 </Layout>

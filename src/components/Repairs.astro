@@ -1,5 +1,8 @@
 ---
 import { motion } from "framer-motion";
+import { Image } from "astro:assets";
+
+import aboutImage from "../images/about.png";
 ---
 
 <section id="repairs" class="repairs-area pt-100 section-padding">
@@ -52,7 +55,7 @@ import { motion } from "framer-motion";
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12">
                     <div class="repairs-content-images">
-                        <img src="/img/about.png" alt="Repair images" loading="lazy" />
+                        <Image src={aboutImage} alt="Repair images" loading="eager" />
                     </div>
                 </div>
             </div>
