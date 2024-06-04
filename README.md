@@ -1,10 +1,12 @@
 # Mac Repair Man - Official Website
-The main official website for the Mac Repair Man that allows customers to view our services, nearest Repair Man location, and book appointments.
+The main official website for the Mac Repair Man allows customers to view our services, and the nearest Repair Man location, and book appointments.
+
+> [!WARNING]
+> Please be aware of the [Mac Repair Man Source Available License (MRMSAL)](https://github.com/Mac-Repair-Man/legal-docs/blob/main/licenses/MRMSAL.md) when using content in this repository. The Mac Repair Man logo, name, and portions of source code are copyrighted and/or trademarks of Mac Repair Man Inc.
 
 ## Table of Contents
 - [Technologies](#technologies)
 - [Installation](#installation)
-- [License](#license)
 - [Contact](#contact)
 
 ## Technologies
@@ -17,7 +19,7 @@ This project is created with the following technologies:
 - [Vercel](https://vercel.com/)
 
 ## Installation
-To run this project locally, follow these steps below:
+To run this project locally, follow the steps below:
 
 1. Clone this repository to your local machine:
     ```bash
@@ -33,9 +35,5 @@ To run this project locally, follow these steps below:
     ```bash
     $ npm run dev
     ```
-
-## License
-This project is licensed under the MIT License. See the [LICENSE](https://github.com/Mac-Repair-Man/website/blob/main/LICENSE) file for details.
-
 ## Contact
 If you have any questions, feel free to reach out to us at our [Email](info@macrepairman.ca) or [Website](https://macrepairman.ca/).
