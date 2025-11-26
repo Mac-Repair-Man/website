@@ -1,4 +1,4 @@
-import 'https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.0/dist/cookieconsent.umd.js';
+import 'https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.1.0/dist/cookieconsent.umd.js';
 
 // Enable dark mode
 document.documentElement.classList.add('cc--darkmode');
@@ -31,8 +31,8 @@ CookieConsent.run({
         translations: {
             en: {
                 consentModal: {
-                    title: "Hello, It's cookie time",
-                    description: "We use cookies to ensure you get the best experience on Mac Repair Man. Cookies help us understand how you interact with our site, which helps us improve our services and tailor our content to you. By clicking 'Accept', you agree to our use of cookies.",
+                    title: "Your Privacy Matters to Mac Repair Man",
+                    description: "We use cookies to enhance your experience, analyze site usage, and support our services at Mac Repair Man. By clicking 'Accept all', you consent to our use of cookies. You can manage your preferences or learn more about how we use cookies to protect your privacy and improve our website.",
                     closeIconLabel: "",
                     acceptAllBtn: "Accept all",
                     acceptNecessaryBtn: "Reject all",
